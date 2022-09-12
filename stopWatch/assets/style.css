@@ -1,0 +1,121 @@
+body {
+    height: 100vh;
+    margin: 0;
+    background-color: #000000cf;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.container {
+    border: 1px solid transparent;
+    box-shadow: -5px -5px 37px #141414,
+        5px 5px 37px #414040;
+    margin: 3rem auto 0 auto;
+    border-radius: 70px;
+    width: fit-content;
+    padding: 80px 150px;
+    text-align: center;
+}
+
+h1 {
+    padding: 0;
+    margin: 0 0 30px 0;
+    color: #fff;
+    font-size: 50px;
+}
+
+p {
+    font-size: 30px;
+    color: #fff;
+}
+
+button{
+    background-color: #2b9765;
+    color: #fff;
+    border: transparent;
+    padding: 15px 30px;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: 0.3s;
+    outline: none;
+}
+
+button:hover{
+    background-color: #1a6840;
+}
+
+button[id="lap"] {
+    max-height: 45px;
+    max-width: 78px;
+    text-align: center;
+    overflow: visible;
+}
+
+.lapLable {
+    transform: translateX(-40px);
+    display: block;
+    font-size: 20px !important;
+    text-align: center;
+    width: 90px;
+    background-color: #000000cf;
+    color: #fff;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.laplable2 {
+    display: none;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+.laps {
+    width: 40%;
+    height: 28%;
+    border-radius: 1rem;
+    overflow: scroll;
+    margin-top: 1rem;
+}
+
+.laps::-webkit-scrollbar {
+    display: none;
+}
+
+.lap-wrapper {
+    width: 100%;
+    height: 22.8%;
+    background-image: linear-gradient(to bottom right, #2b9765, #00445c);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    border-radius: 10px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    box-sizing: border-box;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.lap-value {
+    font-size: 1.3rem;
+}
+
+.delete {
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    background-color: transparent !important;
+    color: #fff;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+.delete:hover {
+    color: #f00836;
+}
