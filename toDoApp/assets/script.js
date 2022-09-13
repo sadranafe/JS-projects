@@ -85,7 +85,6 @@ addTaskBtn.addEventListener("click", () => {
                     } else {
                         notesObj = JSON.parse(notes);
                     }
-                    console.log(countChild);
                     notesObj.splice(countChild, 1, taskInput_el.value)
                     localStorage.setItem("notes", JSON.stringify(notesObj));
                 }
