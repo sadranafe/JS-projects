@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Copy clipboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.0-beta1/css/bootstrap.min.css' integrity='sha512-o/MhoRPVLExxZjCFVBsm17Pkztkzmh7Dp8k7/3JrtNCHh0AQ489kwpfA3dPSHzKDe8YCuEhxXq3Y71eb/o6amg==' crossorigin='anonymous' />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="assets/copy-clipboard.css">
+</head>
+
+<body>
+    <span class="volume fas fa-volume-high ps-2 cursor-pointer"></span>
+    <main class="d-flex col-12">
+        <section class="wdith-275 pt-5 section-1">
+            <div class="box bg-1 position-relative text-uppercase d-flex align-items-end justify-content-end text-light fw-bold pe-2 cursor-pointer" data-colorCode="#1abc9c">turquoise</div>
+            <div class="box bg-2 position-relative text-uppercase d-flex align-items-end justify-content-end text-light fw-bold pe-2 cursor-pointer" data-colorCode="#16a085">green sea</div>
+            <div class="box bg-3 position-relative text-uppercase d-flex align-items-end justify-content-end text-light fw-bold pe-2 cursor-pointer" data-colorCode="#f1c40f">sun flower</div>
+            <div class="box bg-4 position-relative text-uppercase d-flex align-items-end justify-content-end text-light fw-bold pe-2 cursor-pointer" data-colorCode="#f39c12">orange</div>
+        </section>
+
+        <section class="wdith-275 pt-5">
+            <div class="box bg-5 position-relative text-uppercase d-flex align-items-end justify-content-end text-light fw-bold pe-2 cursor-pointer" data-colorCode="#2ecc71">emerald</div>
+            <div class="col-12 box position-relative text-uppercase bg-6 d-flex align-items-end justify-content-end text-light fw-bold pe-2 cursor-pointer" data-colorCode="#27ae60">nephritis</div>
+            <div class="box bg-7 position-relative text-uppercase d-flex align-items-end justify-content-end text-light fw-bold pe-2 cursor-pointer" data-colorCode="#e67e22">carrot</div>
+            <div class="box bg-8 position-relative text-uppercase d-flex align-items-end justify-content-end text-light fw-bold pe-2 cursor-pointer" data-colorCode="#d35400">pumpkin</div>
+        </section>
+
+        <section class="wdith-275 pt-5">
+            <div class="box bg-9 position-relative text-uppercase d-flex align-items-end justify-content-end text-light fw-bold pe-2 cursor-pointer" data-colorCode="#3498db">peter river</div>
+            <div class="box bg-10 position-relative text-uppercase d-flex align-items-end justify-content-end text-light fw-bold pe-2 cursor-pointer" data-colorCode="#2980b9">belize hole</div>
+            <div class="box bg-11 position-relative text-uppercase d-flex align-items-end justify-content-end text-light fw-bold pe-2 cursor-pointer" data-colorCode="#e74c3c">alizarin</div>
+            <div class="box bg-12 position-relative text-uppercase d-flex align-items-end justify-content-end text-light fw-bold pe-2 cursor-pointer" data-colorCode="#c0392b">pomegranate</div>
+        </section>
+
+        <section class="wdith-275 pt-5">
+            <div class="box bg-13 position-relative text-uppercase d-flex align-items-end justify-content-end text-light fw-bold pe-2 ms-n1 cursor-pointer " data-colorCode="#9b59b6">amethyst</div>
+            <div class="box bg-14 position-relative text-uppercase d-flex align-items-end justify-content-end text-light fw-bold pe-2 ms-n1 cursor-pointer " data-colorCode="#8e44ad">wistereria</div>
+            <div class="box bg-15 position-relative text-uppercase d-flex align-items-end justify-content-end text-light fw-bold pe-2 ms-n1 cursor-pointer text-shadow" data-colorCode="#ecf0f1">clouds</div>
+            <div class="box bg-16 position-relative text-uppercase d-flex align-items-end justify-content-end text-light fw-bold pe-2 ms-n1 cursor-pointer " data-colorCode="#bdc3c7">silver</div>
+        </section>
+
+        <section class="wdith-275 pt-5">
+            <div class="box bg-17 position-relative text-uppercase d-flex align-items-end justify-content-end text-light fw-bold pe-2 cursor-pointer" data-colorCode="#34495e">wet asphalt</div>
+            <div class="box bg-18 position-relative text-uppercase d-flex align-items-end justify-content-end text-light fw-bold pe-2 cursor-pointer" data-colorCode="#2c3e50">midnight blue</div>
+            <div class="box bg-19 position-relative text-uppercase d-flex align-items-end justify-content-end text-light fw-bold pe-2 cursor-pointer" data-colorCode="#95a5a6">concrete</div>
+            <div class="box bg-20 position-relative text-uppercase d-flex align-items-end justify-content-end text-light fw-bold pe-2 cursor-pointer" data-colorCode="#7f8c8d">asbestos</div>
+        </section>
+    </main>
+    <p class="fs-6">&copy;By Mohammad Sadra Nafe</p>
+
+    <audio id="myAudio">
+        <source src="../../exercise-self/mixkit-mouse-click-close-1113.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+
+    <article class="modalBox hidden">
+        <h1></h1>
+        <hr class="bg-black col-12">
+        <p class="des-modal d-inline"></p>
+    </article>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="assets/script.js"></script>
+</body>
+</html>
