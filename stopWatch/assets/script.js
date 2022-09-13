@@ -46,6 +46,7 @@ function resetTimer() {
     seconds = 0;
     time.innerHTML = "00" + " : " + "00" + " : " + "00";
     t = false;
+    laps.replaceChildren("");
 };
 
 lap.addEventListener("click", () => {
