@@ -67,9 +67,8 @@ addTaskBtn.addEventListener("click", () => {
             list_el.appendChild(task_el)
 
             
+            
             let countChild = list_el.childElementCount - 1
-
-            // Here , we edit the notes which we click on.(also edit on localStorage.)
 
             taskEdit_el.addEventListener("click", () => {
                 if (taskEdit_el.innerText.toLowerCase() == "edit") {
@@ -92,13 +91,9 @@ addTaskBtn.addEventListener("click", () => {
                 }
             });
 
-
-            // Here , we delet the notes which we click on.(also delete on localStorage.)
             taskDelete_el.addEventListener("click", () => {
                 if (confirm("Are you sure ?") == true) {
                     task_el.remove()
-
-                    let dataCounter = task_el.getAttribute("data-counter")
 
                     let notes = localStorage.getItem("notes");
                     if (notes == null) {
@@ -107,7 +102,7 @@ addTaskBtn.addEventListener("click", () => {
                         notesObj = JSON.parse(notes);
                     }
 
-                    notesObj.splice(dataCounter, 1)
+                    notesObj.splice(countChild, 1)
                     localStorage.setItem("notes", JSON.stringify(notesObj));
                     localStorageNotes()
                 };
