@@ -95,7 +95,11 @@ body {
     content: "Copy";
     width: 40px;
     height: 30px;
-    border: 1px solid #9b9b9b;
+    border: 2px solid #9b9b9b;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     box-sizing: content-box;
     padding: 5px 10px;
     opacity: 0;
