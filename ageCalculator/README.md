@@ -1,1 +1,1 @@
-With HTML JS and TailWindCss
+⚡ With HTML Tailwindcss and JS
