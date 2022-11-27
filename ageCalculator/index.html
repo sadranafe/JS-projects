@@ -1,0 +1,52 @@
+<!-- Powered By Mohammad Sadra Nafe -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Way to watch (compile) tailwind -->
+    <!-- npx tailwindcss -i ./src/input.css -o .dist/style.css --watch -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="dist/style.css">
+    <style>
+        body{
+            width: 100vw;
+            height: 100vh;
+            background-color: rgba(0, 0, 0, 0.8117647059);
+        }
+
+        .cal-parent{
+            box-shadow: -5px -5px 37px #1d1d1d, 5px 5px 37px #3d3d3d;
+            border-radius: 40px;
+        }
+    </style>
+</head>
+<body class="flex justify-center items-center flex-wrap content-center">
+    <div class="cal-parent flex justify-center items-center flex-wrap p-16 py-12">
+        <form action="#" class="bg-slate-600 p-4 w-8/12 flex justify-center content-center flex-wrap rounded-lg">
+            <input type="date" class="px-4 py-2 mr-8 rounded-sm outline-none " required>
+            <input type="submit" value="Calculate" class="text-black rounded-sm font-medium p-2 text-sm cursor-pointer bg-slate-50 border-none hover:text-slate-500 border-black transition-all">
+        </form>
+
+        <div class="w-full flex flex-wrap justify-evenly mt-12 select-none">
+            <div class="box-cal text-center bg-slate-500 p-7 w-3/12 rounded-md">
+                <p class="text-5xl mb-2 text-slate-800 year">-</p>
+                <p class="uppercase text-xs text-slate-200">years</p>
+            </div>
+
+            <div class="box-cal text-center bg-slate-500 p-7 w-3/12 rounded-md">
+                <p class="text-5xl mb-2 text-slate-800 month">-</p>
+                <p class="uppercase text-xs text-slate-200">months</p>
+            </div>
+
+            <div class="box-cal text-center bg-slate-500 p-7 w-3/12 rounded-md">
+                <p class="text-5xl mb-2 text-slate-800 day">-</p>
+                <p class="uppercase text-xs text-slate-200">days</p>
+            </div>
+        </div>
+    </div>
+    <p class="w-full text-xs text-slate-500 text-center mt-4">&copy; Powered by Mohammad Sadra Nafe</p>
+    <script src="dist/script.js"></script>
+</body>
+</html>
