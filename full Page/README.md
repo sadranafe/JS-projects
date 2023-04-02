@@ -1,6 +1,7 @@
 # Responsive Full page
 Responsive full page with HTML , CSS and JS.
-this is the link of this project : [see Demo](https://shimmering-banoffee-71c08a.netlify.app/)
+
+[see Demo](https://shimmering-banoffee-71c08a.netlify.app/)
 
 in this project , i used 5 libraries which can help us very much : 
 1) [bootstrap](https://getbootstrap.com/)
