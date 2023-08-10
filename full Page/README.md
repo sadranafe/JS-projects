@@ -1,5 +1,5 @@
-# Responsive Full page
-responsive full page with HTML , CSS and JS.
+# Full page
+full page with HTML , CSS and JS.
 
 [see Demo](https://shimmering-banoffee-71c08a.netlify.app/)
 
